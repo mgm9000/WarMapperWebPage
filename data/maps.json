@@ -1,0 +1,7 @@
+[
+ {"id":"gettysburg","title":"Gettysburg, the first day","when":"1 July 1863","at":[-77.2311,39.8309],"year":1863,"href":"https://mgm9000.github.io/WarMapper/playbacks/gettysburg/","img":"assets/gettysburg.jpg","blurb":"Brigades of both armies, minute by minute."},
+ {"id":"trenton","title":"First Battle of Trenton","when":"25 to 26 December 1776","at":[-74.765,40.2203],"year":1776,"href":"https://mgm9000.github.io/WarMapper/playbacks/trenton/","img":"assets/trenton.jpg","blurb":"The night crossing, the march and the fight in the town."},
+ {"id":"ypres","title":"First Ypres","when":"18 October to 22 November 1914","at":[2.8846,50.8522],"year":1914,"href":"https://mgm9000.github.io/WarMapper/playbacks/ypres/","img":"assets/ypres.jpg","blurb":"The fight for the Ypres salient, corps and divisions by the day."},
+ {"id":"manila","title":"Manila","when":"4 to 5 February 1899","at":[121.0,14.595],"year":1899,"href":"https://mgm9000.github.io/WarMapper/playbacks/manila/","img":"assets/manila.jpg","blurb":"The first battle of the Philippine War. Data pilot."},
+ {"id":"luzon1899","title":"Luzon, 1899","when":"4 February to 15 December 1899","at":[120.8,16.0],"year":1899,"href":"https://mgm9000.github.io/WarMapper/playbacks/luzon1899/","img":"assets/luzon1899.jpg","blurb":"The Philippine War in central and northern Luzon. Data pilot."}
+]

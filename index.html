@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>WarMapper: a military history map study guide</title>
+<meta name="description" content="Follow the wars of every age across the centuries, then watch the great battles unfold on historical and modern maps.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="home">
+<div id="shell-header"></div>
+
+<main>
+  <section class="stage" aria-label="World map of the centuries">
+    <div id="map" role="img" aria-label="World map showing the empires, kingdoms and states of the selected century"></div>
+    <div class="hud" aria-hidden="false">
+      <div class="era" id="era">2500 BCE</div>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="legend"><span><i class="s"></i>Firmer border</span><span><i></i>Approximate border</span></div>
+    <div class="mapbtns">
+      <button id="home-view" title="Whole world" aria-label="Show the whole world">&#127760;</button>
+      <button id="info" title="Map credits and about the data" aria-label="Map credits and about the data">i</button>
+    </div>
+    <div class="tip" id="tip"></div>
+    <aside class="panel" id="panel" aria-label="Region details" tabindex="-1"></aside>
+  </section>
+
+  <section class="timeline" aria-label="Timeline">
+    <button class="play" id="play" aria-label="Pause the tour"></button>
+    <div class="slider">
+      <input type="range" id="slider" min="0" max="46" step="1" value="0" aria-label="Century">
+    </div>
+    <div class="ticks" id="ticks" aria-hidden="true"></div>
+  </section>
+  <div class="sr" id="live" aria-live="polite"></div>
+</main>
+
+<dialog id="about-data">
+  <h2>About the map and its data</h2>
+  <p><b>Draft.</b> Nothing here has been checked by a historian. Borders before about 1500 are approximate, and for the earliest centuries the data holds only a few named peoples; many regions are unnamed. Each century shows the nearest available snapshot, and its year is written on screen.</p>
+  <ul>
+    <li>Historical borders: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (aourednik and contributors), GPL-3.0, simplified for the web. Its latest snapshot is 2010, so the &ldquo;Today&rdquo; stop shows 2010 borders.</li>
+    <li>Coastline: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>, public domain.</li>
+    <li>Map engine: MapLibre GL JS, BSD-3-Clause.</li>
+    <li>Wars shown: a curated list, each with a page to check it against. Highlights show roughly where a war was fought, not its exact extent.</li>
+  </ul>
+  <form method="dialog"><button class="btn pri">Close</button></form>
+</dialog>
+
+<script src="vendor/maplibre-gl.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/entitlements.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

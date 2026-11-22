@@ -1,0 +1,1031 @@
+[
+ {
+  "stop": -2500,
+  "name": "Lagash–Umma border war",
+  "when": "c. 2450 BCE",
+  "at": [
+   46.2,
+   31.5
+  ],
+  "r": 250,
+  "src": "https://en.wikipedia.org/wiki/Stele_of_the_Vultures",
+  "maps": []
+ },
+ {
+  "stop": -2400,
+  "name": "Conquests of Sargon of Akkad",
+  "when": "c. 2334–2279 BCE",
+  "at": [
+   44.4,
+   33.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Sargon_of_Akkad",
+  "maps": []
+ },
+ {
+  "stop": -2300,
+  "name": "Campaigns of Naram-Sin of Akkad",
+  "when": "c. 2254–2218 BCE",
+  "at": [
+   39.5,
+   35.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Naram-Sin_of_Akkad",
+  "maps": []
+ },
+ {
+  "stop": -2200,
+  "name": "Gutian invasions and the fall of Akkad",
+  "when": "c. 2154 BCE",
+  "at": [
+   44.5,
+   34.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Gutian_dynasty_of_Sumer",
+  "maps": []
+ },
+ {
+  "stop": -2100,
+  "name": "Utu-hengal drives out the Gutians",
+  "when": "c. 2100 BCE",
+  "at": [
+   45.5,
+   32.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Utu-hengal",
+  "maps": []
+ },
+ {
+  "stop": -2000,
+  "name": "Elamites and Amorites sack Ur",
+  "when": "c. 2004 BCE",
+  "at": [
+   46.1,
+   31.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Third_Dynasty_of_Ur",
+  "maps": []
+ },
+ {
+  "stop": -1900,
+  "name": "Senusret III's Nubian campaigns",
+  "when": "c. 1878–1839 BCE",
+  "at": [
+   31.5,
+   21.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Senusret_III",
+  "maps": []
+ },
+ {
+  "stop": -1800,
+  "name": "Hammurabi's conquest of Mesopotamia",
+  "when": "c. 1763–1755 BCE",
+  "at": [
+   44.4,
+   32.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Hammurabi",
+  "maps": []
+ },
+ {
+  "stop": -1700,
+  "name": "Hyksos take northern Egypt",
+  "when": "c. 1650 BCE",
+  "at": [
+   31.8,
+   30.8
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Hyksos",
+  "maps": []
+ },
+ {
+  "stop": -1600,
+  "name": "Hittites sack Babylon",
+  "when": "c. 1595 BCE",
+  "at": [
+   44.4,
+   32.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Mursili_I",
+  "maps": []
+ },
+ {
+  "stop": -1600,
+  "name": "Ahmose I drives out the Hyksos",
+  "when": "c. 1550 BCE",
+  "at": [
+   31.8,
+   30.8
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Ahmose_I",
+  "maps": []
+ },
+ {
+  "stop": -1500,
+  "name": "Battle of Megiddo",
+  "when": "c. 1457 BCE",
+  "at": [
+   35.18,
+   32.58
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(15th_century_BC)",
+  "maps": []
+ },
+ {
+  "stop": -1400,
+  "name": "Suppiluliuma I's Syrian war",
+  "when": "c. 1350 BCE",
+  "at": [
+   38.0,
+   36.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Suppiluliuma_I",
+  "maps": []
+ },
+ {
+  "stop": -1300,
+  "name": "Battle of Kadesh",
+  "when": "c. 1274 BCE",
+  "at": [
+   36.52,
+   34.56
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Kadesh",
+  "maps": []
+ },
+ {
+  "stop": -1200,
+  "name": "Sea Peoples' invasions",
+  "when": "c. 1200–1175 BCE",
+  "at": [
+   34.0,
+   35.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Sea_Peoples",
+  "maps": []
+ },
+ {
+  "stop": -1200,
+  "name": "Trojan War (traditional; historicity debated)",
+  "when": "c. 1180 BCE (traditional)",
+  "at": [
+   26.24,
+   39.96
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Trojan_War",
+  "maps": []
+ },
+ {
+  "stop": -1100,
+  "name": "Battle of Muye: Zhou overthrow Shang",
+  "when": "c. 1046 BCE",
+  "at": [
+   114.2,
+   35.3
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Muye",
+  "maps": []
+ },
+ {
+  "stop": -1000,
+  "name": "Shoshenq I's campaign in the Levant",
+  "when": "c. 925 BCE",
+  "at": [
+   35.0,
+   32.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Shoshenq_I",
+  "maps": []
+ },
+ {
+  "stop": -900,
+  "name": "Assyrian expansion; Battle of Qarqar",
+  "when": "883–853 BCE",
+  "at": [
+   43.0,
+   36.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Qarqar",
+  "maps": []
+ },
+ {
+  "stop": -800,
+  "name": "Fall of Samaria to Assyria",
+  "when": "722 BCE",
+  "at": [
+   35.19,
+   32.28
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Kingdom_of_Israel_(Samaria)",
+  "maps": []
+ },
+ {
+  "stop": -700,
+  "name": "Assyria sacks Thebes",
+  "when": "663 BCE",
+  "at": [
+   32.64,
+   25.7
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Assyrian_conquest_of_Egypt",
+  "maps": []
+ },
+ {
+  "stop": -700,
+  "name": "Fall of Nineveh",
+  "when": "612 BCE",
+  "at": [
+   43.15,
+   36.36
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Fall_of_Nineveh",
+  "maps": []
+ },
+ {
+  "stop": -600,
+  "name": "Cyrus the Great's conquests",
+  "when": "547–539 BCE",
+  "at": [
+   44.0,
+   35.0
+  ],
+  "r": 1200,
+  "src": "https://en.wikipedia.org/wiki/Cyrus_the_Great",
+  "maps": []
+ },
+ {
+  "stop": -500,
+  "name": "Greco-Persian Wars (Marathon, Thermopylae, Salamis)",
+  "when": "499–449 BCE",
+  "at": [
+   23.7,
+   38.1
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Greco-Persian_Wars",
+  "maps": []
+ },
+ {
+  "stop": -500,
+  "name": "Peloponnesian War",
+  "when": "431–404 BCE",
+  "at": [
+   23.0,
+   37.8
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Peloponnesian_War",
+  "maps": []
+ },
+ {
+  "stop": -400,
+  "name": "Alexander the Great's conquests",
+  "when": "334–323 BCE",
+  "at": [
+   55.0,
+   35.0
+  ],
+  "r": 2600,
+  "src": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+  "maps": []
+ },
+ {
+  "stop": -400,
+  "name": "Samnite Wars",
+  "when": "343–290 BCE",
+  "at": [
+   14.5,
+   41.3
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Samnite_Wars",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Punic Wars: First and Second",
+  "when": "264–201 BCE",
+  "at": [
+   12.0,
+   36.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Punic_Wars",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Battle of Changping and Qin's unification wars",
+  "when": "260–221 BCE",
+  "at": [
+   112.9,
+   35.8
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Changping",
+  "maps": []
+ },
+ {
+  "stop": -200,
+  "name": "Third Punic War: Carthage destroyed",
+  "when": "149–146 BCE",
+  "at": [
+   10.32,
+   36.85
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Third_Punic_War",
+  "maps": []
+ },
+ {
+  "stop": -200,
+  "name": "Maccabean Revolt",
+  "when": "167–160 BCE",
+  "at": [
+   35.2,
+   31.9
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Maccabean_Revolt",
+  "maps": []
+ },
+ {
+  "stop": -200,
+  "name": "Han–Xiongnu War",
+  "when": "133–89 BCE",
+  "at": [
+   110.0,
+   40.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Han–Xiongnu_War",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Gallic Wars",
+  "when": "58–50 BCE",
+  "at": [
+   3.0,
+   47.0
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/Gallic_Wars",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Battle of Actium",
+  "when": "31 BCE",
+  "at": [
+   20.7,
+   38.95
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Actium",
+  "maps": []
+ },
+ {
+  "stop": 1,
+  "name": "Roman conquest of Britain begins",
+  "when": "43 CE",
+  "at": [
+   -1.0,
+   52.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain",
+  "maps": []
+ },
+ {
+  "stop": 1,
+  "name": "First Jewish–Roman War",
+  "when": "66–73 CE",
+  "at": [
+   35.2,
+   31.8
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/First_Jewish–Roman_War",
+  "maps": []
+ },
+ {
+  "stop": 100,
+  "name": "Trajan's Dacian Wars",
+  "when": "101–106 CE",
+  "at": [
+   24.8,
+   45.6
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Trajan's_Dacian_Wars",
+  "maps": []
+ },
+ {
+  "stop": 100,
+  "name": "Bar Kokhba revolt",
+  "when": "132–136 CE",
+  "at": [
+   35.0,
+   31.7
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Bar_Kokhba_revolt",
+  "maps": []
+ },
+ {
+  "stop": 100,
+  "name": "Marcomannic Wars",
+  "when": "166–180 CE",
+  "at": [
+   17.0,
+   48.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Marcomannic_Wars",
+  "maps": []
+ },
+ {
+  "stop": 200,
+  "name": "Shapur I defeats Valerian at Edessa",
+  "when": "260 CE",
+  "at": [
+   38.8,
+   37.2
+  ],
+  "r": 450,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Edessa",
+  "maps": []
+ },
+ {
+  "stop": 300,
+  "name": "Battle of the Milvian Bridge",
+  "when": "312 CE",
+  "at": [
+   12.47,
+   41.94
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge",
+  "maps": []
+ },
+ {
+  "stop": 300,
+  "name": "Battle of Adrianople",
+  "when": "378 CE",
+  "at": [
+   26.55,
+   41.67
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Adrianople",
+  "maps": []
+ },
+ {
+  "stop": 400,
+  "name": "Alaric sacks Rome",
+  "when": "410 CE",
+  "at": [
+   12.47,
+   41.9
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+  "maps": []
+ },
+ {
+  "stop": 400,
+  "name": "Battle of the Catalaunian Plains",
+  "when": "451 CE",
+  "at": [
+   4.3,
+   48.9
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_the_Catalaunian_Plains",
+  "maps": []
+ },
+ {
+  "stop": 500,
+  "name": "Justinian's wars of reconquest",
+  "when": "533–554 CE",
+  "at": [
+   12.0,
+   40.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Gothic_War_(535–554)",
+  "maps": []
+ },
+ {
+  "stop": 600,
+  "name": "Rashidun conquests: Yarmouk and al-Qadisiyyah",
+  "when": "636 CE",
+  "at": [
+   42.0,
+   32.5
+  ],
+  "r": 1100,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Yarmouk",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "Battle of Tours",
+  "when": "732 CE",
+  "at": [
+   0.68,
+   46.8
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "Battle of Talas",
+  "when": "751 CE",
+  "at": [
+   71.4,
+   42.5
+  ],
+  "r": 450,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Talas",
+  "maps": []
+ },
+ {
+  "stop": 800,
+  "name": "Great Heathen Army invades England",
+  "when": "865 CE",
+  "at": [
+   -1.0,
+   53.0
+  ],
+  "r": 450,
+  "src": "https://en.wikipedia.org/wiki/Great_Heathen_Army",
+  "maps": []
+ },
+ {
+  "stop": 800,
+  "name": "Zanj Rebellion",
+  "when": "869–883 CE",
+  "at": [
+   47.8,
+   30.5
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Zanj_Rebellion",
+  "maps": []
+ },
+ {
+  "stop": 900,
+  "name": "Battle of Lechfeld",
+  "when": "955 CE",
+  "at": [
+   10.9,
+   48.3
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
+  "maps": []
+ },
+ {
+  "stop": 900,
+  "name": "Sviatoslav's war in Bulgaria",
+  "when": "968–971 CE",
+  "at": [
+   27.0,
+   43.5
+  ],
+  "r": 450,
+  "src": "https://en.wikipedia.org/wiki/Sviatoslav_I_of_Kiev",
+  "maps": []
+ },
+ {
+  "stop": 1000,
+  "name": "Battle of Hastings",
+  "when": "1066 CE",
+  "at": [
+   0.49,
+   50.91
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+  "maps": []
+ },
+ {
+  "stop": 1000,
+  "name": "Battle of Manzikert",
+  "when": "1071 CE",
+  "at": [
+   42.54,
+   39.15
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
+  "maps": []
+ },
+ {
+  "stop": 1100,
+  "name": "Battle of Hattin",
+  "when": "1187 CE",
+  "at": [
+   35.45,
+   32.8
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Hattin",
+  "maps": []
+ },
+ {
+  "stop": 1100,
+  "name": "Jin–Song wars: fall of Kaifeng",
+  "when": "1127 CE",
+  "at": [
+   114.3,
+   34.8
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Jin–Song_wars",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Mongol conquests",
+  "when": "1206–1279 CE",
+  "at": [
+   75.0,
+   45.0
+  ],
+  "r": 3200,
+  "src": "https://en.wikipedia.org/wiki/Mongol_invasions_and_conquests",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Siege of Baghdad",
+  "when": "1258 CE",
+  "at": [
+   44.4,
+   33.3
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)",
+  "maps": []
+ },
+ {
+  "stop": 1300,
+  "name": "Hundred Years' War begins",
+  "when": "1337 CE",
+  "at": [
+   1.0,
+   49.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
+  "maps": []
+ },
+ {
+  "stop": 1300,
+  "name": "Timur's campaigns",
+  "when": "1370–1405 CE",
+  "at": [
+   65.0,
+   38.0
+  ],
+  "r": 2000,
+  "src": "https://en.wikipedia.org/wiki/Timur",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Battle of Agincourt",
+  "when": "1415 CE",
+  "at": [
+   2.14,
+   50.46
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Fall of Constantinople",
+  "when": "1453 CE",
+  "at": [
+   28.98,
+   41.01
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Fall of Granada",
+  "when": "1492 CE",
+  "at": [
+   -3.6,
+   37.18
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Granada_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Spanish conquest of the Aztec Empire",
+  "when": "1519–1521 CE",
+  "at": [
+   -99.13,
+   19.43
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Battle of Lepanto",
+  "when": "1571 CE",
+  "at": [
+   21.2,
+   38.4
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Lepanto_(1571)",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Battle of Okehazama (Sengoku period)",
+  "when": "1560 CE",
+  "at": [
+   137.0,
+   35.05
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Okehazama",
+  "maps": []
+ },
+ {
+  "stop": 1600,
+  "name": "Thirty Years' War",
+  "when": "1618–1648 CE",
+  "at": [
+   12.0,
+   50.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Thirty_Years'_War",
+  "maps": []
+ },
+ {
+  "stop": 1600,
+  "name": "English Civil War",
+  "when": "1642–1651 CE",
+  "at": [
+   -1.5,
+   52.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/English_Civil_War",
+  "maps": []
+ },
+ {
+  "stop": 1600,
+  "name": "Qing conquest of the Ming",
+  "when": "1644–1683 CE",
+  "at": [
+   116.4,
+   39.9
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Qing_conquest_of_the_Ming",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "War of the Spanish Succession",
+  "when": "1701–1714 CE",
+  "at": [
+   5.0,
+   48.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Seven Years' War (European theatre)",
+  "when": "1756–1763 CE",
+  "at": [
+   12.0,
+   51.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Seven_Years'_War",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "American Revolutionary War",
+  "when": "1775–1783 CE",
+  "at": [
+   -75.0,
+   40.0
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
+  "maps": [
+   "trenton"
+  ]
+ },
+ {
+  "stop": 1800,
+  "name": "Napoleonic Wars",
+  "when": "1803–1815 CE",
+  "at": [
+   10.0,
+   48.0
+  ],
+  "r": 1700,
+  "src": "https://en.wikipedia.org/wiki/Napoleonic_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Taiping Rebellion",
+  "when": "1850–1864 CE",
+  "at": [
+   113.0,
+   28.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Taiping_Rebellion",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "American Civil War",
+  "when": "1861–1865 CE",
+  "at": [
+   -84.0,
+   36.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/American_Civil_War",
+  "maps": [
+   "gettysburg"
+  ]
+ },
+ {
+  "stop": 1800,
+  "name": "Philippine–American War",
+  "when": "1899–1902 CE",
+  "at": [
+   121.0,
+   15.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Philippine–American_War",
+  "maps": [
+   "manila",
+   "luzon1899"
+  ]
+ },
+ {
+  "stop": 1900,
+  "name": "World War I: the Western Front",
+  "when": "1914–1918 CE",
+  "at": [
+   3.5,
+   50.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/World_War_I",
+  "maps": [
+   "ypres"
+  ]
+ },
+ {
+  "stop": 1900,
+  "name": "World War II",
+  "when": "1939–1945 CE",
+  "at": [
+   20.0,
+   50.0
+  ],
+  "r": 2500,
+  "src": "https://en.wikipedia.org/wiki/World_War_II",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Korean War",
+  "when": "1950–1953 CE",
+  "at": [
+   127.5,
+   37.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Korean_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Vietnam War",
+  "when": "1955–1975 CE",
+  "at": [
+   106.0,
+   15.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Vietnam_War",
+  "maps": []
+ },
+ {
+  "stop": 2000,
+  "name": "Iraq War",
+  "when": "2003–2011 CE",
+  "at": [
+   44.4,
+   33.3
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Iraq_War",
+  "maps": []
+ },
+ {
+  "stop": 2000,
+  "name": "War in Afghanistan",
+  "when": "2001–2021 CE",
+  "at": [
+   67.7,
+   33.9
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001–2021)",
+  "maps": []
+ },
+ {
+  "stop": 2026,
+  "name": "Russo-Ukrainian War (full-scale phase from 2022)",
+  "when": "from 2022 CE",
+  "at": [
+   32.0,
+   49.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Russo-Ukrainian_war",
+  "maps": []
+ },
+ {
+  "stop": 2026,
+  "name": "War in Sudan (from 2023)",
+  "when": "from 2023 CE",
+  "at": [
+   32.5,
+   15.6
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/War_in_Sudan_(2023–present)",
+  "maps": []
+ },
+ {
+  "stop": 2026,
+  "name": "Israel–Hamas war (from 2023)",
+  "when": "from 2023 CE",
+  "at": [
+   34.4,
+   31.4
+  ],
+  "r": 250,
+  "src": "https://en.wikipedia.org/wiki/Gaza_war",
+  "maps": []
+ }
+]
