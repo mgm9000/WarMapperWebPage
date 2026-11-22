@@ -1,0 +1,11 @@
+Copyright (c) 2026 Starfishient LLC. All rights reserved.
+
+This repository and its contents (the WarMapper home page code, text and
+design) are proprietary. No licence is granted to use, copy, modify, merge,
+publish, distribute, sublicense or sell any part of it without the prior
+written permission of Starfishient LLC.
+
+Third-party material in this repository stays under its own terms and is not
+covered by the notice above. See NOTICE.md and vendor/MAPLIBRE-LICENSE.txt.
+In particular, the historical border data in data/hist/ comes from a
+GPL-3.0 project whose terms for reuse are still being reviewed.
