@@ -1,6 +1,7 @@
 /* WarMapper home page: the tour of the centuries. Static, no build step. See README.md. */
 (function () {
   "use strict";
+  const SHOW_PINS = false; /* WarMapper map diamonds: switched off for now */
   const DWELL_MS = 3000, FADE_MS = 1000, TEXT_FADE_MS = 280;
   const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const STOPS = []; for (let y = -2500; y <= -100; y += 100) STOPS.push(y); STOPS.push(1); for (let y = 100; y <= 2000; y += 100) STOPS.push(y); STOPS.push(2026);
@@ -56,7 +57,7 @@
       const rad = ["interpolate", ["exponential", 2], ["zoom"], 0, ["get", "r0"], 22, ["*", ["get", "r0"], 4194304]];
       map.addLayer({ id: "war-glow", type: "circle", source: "wars", paint: { "circle-radius": rad, "circle-color": "#d2a24a", "circle-opacity": 0.16, "circle-blur": 0.5, "circle-pitch-alignment": "map" } });
       map.addLayer({ id: "war-ring", type: "circle", source: "wars", paint: { "circle-radius": rad, "circle-color": "rgba(0,0,0,0)", "circle-stroke-color": "#f0c874", "circle-stroke-width": 1.4, "circle-stroke-opacity": 0.85, "circle-pitch-alignment": "map" } });
-      pinsInit();
+      if (SHOW_PINS) pinsInit();
       go(0, true);
       if (playing) schedule();
       syncPlay();
@@ -97,19 +98,18 @@
     const step = (t) => { const k = Math.min(1, (t - t0) / dur), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; paint(from + (to - from) * e); if (k < 1) sliderAnim = requestAnimationFrame(step); };
     sliderAnim = requestAnimationFrame(step);
   }
+  /* two stacked text layers: the new year fades in as the old one fades out */
+  let hudOn = 0;
   function setHud(stop, h, soft) {
-    const apply = () => {
-      $("era").textContent = fmtYear(stop);
-      const exact = h.year === stop;
-      $("meta").textContent = "";
-      const note = el("span"); note.append("Borders from the ", Object.assign(el("b"), { textContent: snapLabel(h.year) }), " snapshot" + (exact ? "" : " (nearest available)"));
-      $("meta").append(note);
-      if (stop === 2026) $("meta").append(el("span", null, ". Latest data is 2010."));
-      else if (h.year <= 1000) $("meta").append(el("span", null, ". Early borders are approximate."));
-      $("hud").classList.remove("fade");
-    };
-    clearTimeout(hudTimer);
-    if (soft && !REDUCED) { $("hud").classList.add("fade"); hudTimer = setTimeout(apply, TEXT_FADE_MS); } else apply();
+    const layers = document.querySelectorAll("#hud .hudl");
+    const next = layers[soft ? 1 - hudOn : hudOn], prev = layers[hudOn];
+    next.querySelector(".era").textContent = fmtYear(stop);
+    const meta = next.querySelector(".meta"); meta.textContent = "";
+    const exact = h.year === stop;
+    meta.append("Borders from the ", Object.assign(el("b"), { textContent: snapLabel(h.year) }), " snapshot" + (exact ? "" : " (nearest available)"));
+    if (stop === 2026) meta.append(". Latest data is 2010.");
+    else if (h.year <= 1000) meta.append(". Early borders are approximate.");
+    if (next !== prev) { next.classList.add("on"); prev.classList.remove("on"); hudOn = 1 - hudOn; }
   }
   /* go(i, instant): instant = the viewer is dragging or the page is starting, so no fades or slider glide */
   function go(i, instant) {

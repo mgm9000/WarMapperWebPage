@@ -3,7 +3,7 @@
   --bg:#080b10; --bg2:#0d131b; --panel:#111924; --panel2:#17212e; --line:#243246; --ink:#e9e4d6; --soft:#9aa6b6;
   --brass:#d2a24a; --brass2:#f0c874; --blue:#6fa8e6; --danger:#e07a6b;
   --head:"Zilla Slab",Georgia,serif; --body:Inter,system-ui,Arial,sans-serif;
-  --hdr:84px; --tl:112px;
+  --hdr:64px; --tl:112px;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -42,7 +42,7 @@ a{color:var(--brass2)}
 #map{position:absolute;inset:0;background:var(--bg)}
 .maplibregl-canvas{outline:none}
 .hud{position:absolute;left:18px;top:14px;z-index:5;pointer-events:none;max-width:min(520px,calc(100% - 36px))}
-.hud{transition:opacity .28s ease}.hud.fade{opacity:0}
+.hud{display:grid}.hudl{grid-area:1/1;opacity:0;transition:opacity 1s ease}.hudl.on{opacity:1}
 .hud .era{font:700 clamp(38px,7vw,72px)/1 var(--head);color:var(--ink);text-shadow:0 2px 24px #000}
 .hud .meta{margin-top:6px;font-size:13px;color:var(--soft);text-shadow:0 1px 8px #000}
 .hud .meta b{color:var(--brass2);font-weight:600}

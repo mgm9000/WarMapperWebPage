@@ -15,8 +15,7 @@
   const brand = document.createElement("a");
   brand.className = "brand"; brand.href = "index.html"; brand.setAttribute("aria-label", "WarMapper home");
   const b = document.createElement("b"); b.textContent = "WarMapper";
-  const s = document.createElement("span"); s.textContent = BYLINE;
-  brand.append(b, s);
+  brand.append(b);
   const burger = document.createElement("button");
   burger.className = "burger"; burger.setAttribute("aria-label", "Menu"); burger.setAttribute("aria-expanded", "false");
   burger.append(document.createElement("i"));
