@@ -17,11 +17,11 @@
 <main>
   <section class="stage" aria-label="World map of the centuries">
     <div id="map" role="img" aria-label="World map showing the empires, kingdoms and states of the selected century"></div>
-    <div class="hud" aria-hidden="false">
+    <div class="hud" id="hud">
       <div class="era" id="era">2500 BCE</div>
       <div class="meta" id="meta"></div>
     </div>
-    <div class="legend"><span><i class="s"></i>Firmer border</span><span><i></i>Approximate border</span></div>
+    <div class="legend"><span><i class="s"></i>Firmer border</span><span><i></i>Approximate border</span><span><b class="dia"></b>WarMapper map (click to open)</span></div>
     <div class="mapbtns">
       <button id="home-view" title="Whole world" aria-label="Show the whole world">&#127760;</button>
       <button id="info" title="Map credits and about the data" aria-label="Map credits and about the data">i</button>
@@ -33,7 +33,7 @@
   <section class="timeline" aria-label="Timeline">
     <button class="play" id="play" aria-label="Pause the tour"></button>
     <div class="slider">
-      <input type="range" id="slider" min="0" max="46" step="1" value="0" aria-label="Century">
+      <input type="range" id="slider" min="0" max="46" step="any" value="0" aria-label="Century">
     </div>
     <div class="ticks" id="ticks" aria-hidden="true"></div>
   </section>

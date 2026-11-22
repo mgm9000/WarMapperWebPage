@@ -1,9 +1,8 @@
 /* WarMapper home page: the tour of the centuries. Static, no build step. See README.md. */
 (function () {
   "use strict";
-  const DWELL_MS = 3000, FADE_MS = 700;
+  const DWELL_MS = 3000, FADE_MS = 1000, TEXT_FADE_MS = 280;
   const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const PALETTE = ["#3b5b7a", "#7a4b4b", "#4f6f52", "#8a6d3b", "#5b4b7a", "#3f7476", "#7a5a3b", "#6b3f5a", "#5a6b3f", "#4a5a8a"];
   const STOPS = []; for (let y = -2500; y <= -100; y += 100) STOPS.push(y); STOPS.push(1); for (let y = 100; y <= 2000; y += 100) STOPS.push(y); STOPS.push(2026);
   const WORLD_BOUNDS = [[-168, -52], [178, 76]];
 
@@ -24,11 +23,10 @@
     for (const h of hist) { const d = Math.abs(h.year - stop); if (d < bd || (d === bd && h.year > best.year)) { best = h; bd = d; } }
     return best;
   }
-  function hash(s) { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
   function loadSnap(h) {
     if (cache.has(h.year)) return cache.get(h.year);
     const p = getJSON("data/hist/" + h.file).then((fc) => {
-      fc.features.forEach((f, i) => { f.id = i; const n = f.properties.n || f.properties.s; f.properties.c = n ? hash(n) % PALETTE.length : -1; f.properties.approx = f.properties.b === 1 || f.properties.b == null ? 1 : 0; });
+      fc.features.forEach((f, i) => { f.id = i; f.properties.approx = f.properties.b === 1 || f.properties.b == null ? 1 : 0; });
       return fc;
     });
     cache.set(h.year, p); return p;
@@ -49,7 +47,7 @@
       for (const b of ["A", "B"]) {
         map.addSource("era" + b, { type: "geojson", data: { type: "FeatureCollection", features: [] } });
         map.addLayer({ id: "fill" + b, type: "fill", source: "era" + b, paint: {
-          "fill-color": ["case", ["==", ["get", "c"], -1], "#2b3644", ["match", ["get", "c"], ...PALETTE.flatMap((c, i) => [i, c]), "#2b3644"]],
+          "fill-color": ["case", ["boolean", ["feature-state", "hover"], false], "#46648a", "#1f2d40"],
           "fill-opacity": 0, "fill-opacity-transition": { duration: FADE_MS } } });
         map.addLayer({ id: "line" + b, type: "line", source: "era" + b, filter: ["==", ["get", "approx"], 0], paint: { "line-color": "#c9d3e0", "line-width": 0.9, "line-opacity": 0, "line-opacity-transition": { duration: FADE_MS } } });
         map.addLayer({ id: "lined" + b, type: "line", source: "era" + b, filter: ["==", ["get", "approx"], 1], paint: { "line-color": "#aab6c6", "line-width": 0.8, "line-dasharray": [3, 3], "line-opacity": 0, "line-opacity-transition": { duration: FADE_MS } } });
@@ -71,26 +69,54 @@
     map.on("mousemove", (e) => {
       if (!map.getLayer("fill" + buf)) return;
       const f = map.queryRenderedFeatures(e.point, { layers: ["fill" + buf] })[0];
+      setHover(f ? f.id : null);
       map.getCanvas().style.cursor = f ? "pointer" : "";
       const tip = $("tip");
       if (f) { tip.textContent = f.properties.n || f.properties.s || "Unnamed region"; tip.style.display = "block"; tip.style.left = e.point.x + "px"; tip.style.top = e.point.y + "px"; }
       else tip.style.display = "none";
     });
-    map.on("mouseout", () => { $("tip").style.display = "none"; });
+    map.on("mouseout", () => { $("tip").style.display = "none"; setHover(null); });
+  }
+
+  let hoverId = null, hoverBuf = null;
+  function setHover(id) {
+    if (id === hoverId && hoverBuf === buf) return;
+    if (hoverId !== null && map.getSource("era" + hoverBuf)) map.setFeatureState({ source: "era" + hoverBuf, id: hoverId }, { hover: false });
+    hoverId = id; hoverBuf = buf;
+    if (id !== null) map.setFeatureState({ source: "era" + buf, id }, { hover: true });
   }
 
   /* ---------- tour ---------- */
+  let sliderAnim = null, hudTimer = null;
+  function setSlider(i, animate) {
+    cancelAnimationFrame(sliderAnim);
+    const sl = $("slider"), from = parseFloat(sl.value), to = i, max = STOPS.length - 1;
+    const paint = (v) => { sl.value = v; sl.style.setProperty("--p", (v / max * 100) + "%"); };
+    if (!animate || REDUCED || from === to) { paint(to); return; }
+    const t0 = performance.now(), dur = 650;
+    const step = (t) => { const k = Math.min(1, (t - t0) / dur), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; paint(from + (to - from) * e); if (k < 1) sliderAnim = requestAnimationFrame(step); };
+    sliderAnim = requestAnimationFrame(step);
+  }
+  function setHud(stop, h, soft) {
+    const apply = () => {
+      $("era").textContent = fmtYear(stop);
+      const exact = h.year === stop;
+      $("meta").textContent = "";
+      const note = el("span"); note.append("Borders from the ", Object.assign(el("b"), { textContent: snapLabel(h.year) }), " snapshot" + (exact ? "" : " (nearest available)"));
+      $("meta").append(note);
+      if (stop === 2026) $("meta").append(el("span", null, ". Latest data is 2010."));
+      else if (h.year <= 1000) $("meta").append(el("span", null, ". Early borders are approximate."));
+      $("hud").classList.remove("fade");
+    };
+    clearTimeout(hudTimer);
+    if (soft && !REDUCED) { $("hud").classList.add("fade"); hudTimer = setTimeout(apply, TEXT_FADE_MS); } else apply();
+  }
+  /* go(i, instant): instant = the viewer is dragging or the page is starting, so no fades or slider glide */
   function go(i, instant) {
-    idx = i; $("slider").value = i;
+    idx = i;
     const stop = STOPS[i], h = snapFor(stop);
-    $("era").textContent = fmtYear(stop);
-    $("slider").style.setProperty("--p", (i / (STOPS.length - 1) * 100) + "%");
-    const exact = h.year === stop;
-    $("meta").textContent = "";
-    const note = el("span"); note.append("Borders from the ", Object.assign(el("b"), { textContent: snapLabel(h.year) }), " snapshot" + (exact ? "" : " (nearest available)"));
-    $("meta").append(note);
-    if (stop === 2026) $("meta").append(el("span", null, ". Latest data is 2010."));
-    else if (h.year <= 1000) $("meta").append(el("span", null, ". Early borders are approximate."));
+    setSlider(i, !instant);
+    setHud(stop, h, !instant);
     if (!playing) $("live").textContent = fmtYear(stop) + ". Borders from the " + snapLabel(h.year) + " snapshot.";
     showWars(stop, instant);
     loadSnap(h).then((fc) => {
@@ -105,12 +131,13 @@
     const inc = buf === "A" ? "B" : "A", old = buf;
     map.getSource("era" + inc).setData(fc);
     const d = instant ? 0 : FADE_MS;
-    for (const [l, o] of [["fill", 0.8], ["line", 0.9], ["lined", 0.9]]) {
+    for (const [l, o] of [["fill", 0.38], ["line", 0.9], ["lined", 0.9]]) {
       map.setPaintProperty(l + inc, l === "fill" ? "fill-opacity-transition" : "line-opacity-transition", { duration: d });
       map.setPaintProperty(l + old, l === "fill" ? "fill-opacity-transition" : "line-opacity-transition", { duration: d });
       map.setPaintProperty(l + inc, l === "fill" ? "fill-opacity" : "line-opacity", o);
       map.setPaintProperty(l + old, l === "fill" ? "fill-opacity" : "line-opacity", 0);
     }
+    setHover(null);
     buf = inc; shown = year;
   }
   function schedule() { clearTimeout(timer); timer = setTimeout(() => { go((idx + 1) % STOPS.length); schedule(); }, DWELL_MS); }
@@ -127,22 +154,32 @@
   }
 
   /* ---------- war highlights ---------- */
+  let warToken = 0;
   function showWars(stop, instant) {
-    const list = wars.filter((w) => w.stop === stop);
-    warMarkers.forEach((m) => m.remove()); warMarkers = [];
-    if (!map.getSource("wars")) return;
-    map.getSource("wars").setData({ type: "FeatureCollection", features: list.map((w) => ({ type: "Feature", properties: { r0: w.r * 1000 / (156543.03 * Math.cos(w.at[1] * Math.PI / 180)) }, geometry: { type: "Point", coordinates: w.at } })) });
-    const placed = []; /* labels that would overlap at the world view are stacked downwards */
-    list.forEach((w, k) => {
-      const px = map.project(w.at); let dy = 0;
-      while (placed.some((q) => Math.abs(q.x - px.x) < 170 && Math.abs(q.y - (px.y + dy)) < 26)) dy += 26;
-      placed.push({ x: px.x, y: px.y + dy });
-      const wrap = el("div", "warwrap"); /* MapLibre positions the wrapper; the button inside does the animation */
-      const b = el("button", "war", w.name); b.type = "button"; b.style.animationDelay = (k * 120) + "ms"; b.title = w.name + " (" + w.when + ")";
-      b.addEventListener("click", (e) => { e.stopPropagation(); pause(); openWar(w); });
-      wrap.append(b);
-      warMarkers.push(new maplibregl.Marker({ element: wrap, anchor: "left", offset: [8, dy] }).setLngLat(w.at).addTo(map));
-    });
+    const list = wars.filter((w) => w.stop === stop), token = ++warToken;
+    const old = warMarkers; warMarkers = [];
+    if (!map.getSource("wars")) { old.forEach((m) => m.remove()); return; }
+    const soft = !instant && !REDUCED;
+    old.forEach((m) => { m.getElement().classList.add("out"); });
+    setTimeout(() => old.forEach((m) => m.remove()), soft ? 320 : 0);
+    const fade = (op, ms) => { for (const l of ["war-glow", "war-ring"]) { map.setPaintProperty(l, l === "war-glow" ? "circle-opacity-transition" : "circle-stroke-opacity-transition", { duration: ms }); } map.setPaintProperty("war-glow", "circle-opacity", op * 0.16); map.setPaintProperty("war-ring", "circle-stroke-opacity", op * 0.85); };
+    const build = () => {
+      if (token !== warToken) return;
+      map.getSource("wars").setData({ type: "FeatureCollection", features: list.map((w) => ({ type: "Feature", properties: { r0: w.r * 1000 / (156543.03 * Math.cos(w.at[1] * Math.PI / 180)) }, geometry: { type: "Point", coordinates: w.at } })) });
+      fade(1, soft ? 600 : 0);
+      const placed = []; /* labels that would overlap at the world view are stacked downwards */
+      list.forEach((w, k) => {
+        const px = map.project(w.at); let dy = 0;
+        while (placed.some((q) => Math.abs(q.x - px.x) < 170 && Math.abs(q.y - (px.y + dy)) < 26)) dy += 26;
+        placed.push({ x: px.x, y: px.y + dy });
+        const wrap = el("div", "warwrap"); /* MapLibre positions the wrapper; the button inside does the animation */
+        const b = el("button", "war", w.name); b.type = "button"; b.style.animationDelay = (k * 160) + "ms"; b.title = w.name + " (" + w.when + ")";
+        b.addEventListener("click", (e) => { e.stopPropagation(); pause(); openWar(w); });
+        wrap.append(b);
+        warMarkers.push(new maplibregl.Marker({ element: wrap, anchor: "left", offset: [8, dy] }).setLngLat(w.at).addTo(map));
+      });
+    };
+    if (soft) { fade(0, 300); setTimeout(build, 420); } else { fade(0, 0); build(); }
   }
   function pinsInit() {
     mapsList.forEach((m) => {
@@ -245,7 +282,13 @@
   }
   function wire() {
     $("play").addEventListener("click", () => { if (playing) pause(); else resume(); });
-    $("slider").addEventListener("input", (e) => { pause(); closePanel(); go(+e.target.value, true); });
+    $("slider").addEventListener("input", (e) => { pause(); closePanel(); cancelAnimationFrame(sliderAnim); const i = Math.max(0, Math.min(STOPS.length - 1, Math.round(+e.target.value))); if (i !== idx) go(i, true); else setSlider(i, false); });
+    $("slider").addEventListener("keydown", (e) => { /* the slider glides (step "any"), so the keys are handled here: one stop at a time */
+      const d = { ArrowLeft: -1, ArrowDown: -1, ArrowRight: 1, ArrowUp: 1, PageDown: -5, PageUp: 5 }[e.key];
+      const to = e.key === "Home" ? 0 : e.key === "End" ? STOPS.length - 1 : d ? Math.max(0, Math.min(STOPS.length - 1, idx + d)) : null;
+      if (to === null) return;
+      e.preventDefault(); pause(); closePanel(); cancelAnimationFrame(sliderAnim); if (to !== idx) go(to, true); else setSlider(to, false);
+    });
     $("home-view").addEventListener("click", () => { closePanel(); toWorld(); });
     $("info").addEventListener("click", () => $("about-data").showModal());
     addEventListener("keydown", (e) => { if (e.key === "Escape" && panelOpen) { closePanel(); toWorld(); } });

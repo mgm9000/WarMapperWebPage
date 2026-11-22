@@ -42,19 +42,22 @@ a{color:var(--brass2)}
 #map{position:absolute;inset:0;background:var(--bg)}
 .maplibregl-canvas{outline:none}
 .hud{position:absolute;left:18px;top:14px;z-index:5;pointer-events:none;max-width:min(520px,calc(100% - 36px))}
+.hud{transition:opacity .28s ease}.hud.fade{opacity:0}
 .hud .era{font:700 clamp(38px,7vw,72px)/1 var(--head);color:var(--ink);text-shadow:0 2px 24px #000}
 .hud .meta{margin-top:6px;font-size:13px;color:var(--soft);text-shadow:0 1px 8px #000}
 .hud .meta b{color:var(--brass2);font-weight:600}
 .legend{position:absolute;left:18px;bottom:14px;z-index:5;font-size:12px;color:var(--soft);display:flex;gap:14px;align-items:center;pointer-events:none;text-shadow:0 1px 6px #000}
 .legend i{display:inline-block;width:22px;height:0;border-top:2px dashed var(--soft);vertical-align:middle;margin-right:6px}
 .legend i.s{border-top-style:solid}
+.legend .dia{display:inline-block;width:9px;height:9px;transform:rotate(45deg);background:var(--brass2);border:2px solid #161006;box-shadow:0 0 0 1px rgba(240,200,116,.6);margin:0 8px 0 3px;vertical-align:middle}
 .mapbtns{position:absolute;right:14px;top:14px;z-index:6;display:flex;flex-direction:column;gap:8px}
 .mapbtns button{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:rgba(17,25,36,.9);color:var(--ink);cursor:pointer;font:600 16px var(--body)}
 .mapbtns button:hover{background:var(--panel2)}
 .tip{position:absolute;z-index:7;pointer-events:none;padding:5px 9px;border-radius:8px;background:rgba(8,11,16,.92);border:1px solid var(--line);font-size:13px;transform:translate(12px,12px);display:none;max-width:260px}
-.war{border:0;background:rgba(8,11,16,.78);color:var(--brass2);font:600 12.5px/1.25 var(--body);padding:4px 9px;border-radius:999px;border:1px solid rgba(210,162,74,.55);cursor:pointer;white-space:nowrap;max-width:240px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 14px rgba(0,0,0,.6);animation:pop .45s ease both}
+.warwrap .war{transition:opacity .3s ease}.warwrap.out .war{opacity:0}
+.war{border:0;background:rgba(8,11,16,.78);color:var(--brass2);font:600 12.5px/1.25 var(--body);padding:4px 9px;border-radius:999px;border:1px solid rgba(210,162,74,.55);cursor:pointer;white-space:nowrap;max-width:240px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 14px rgba(0,0,0,.6);animation:pop .6s ease backwards}
 .war:hover{background:var(--brass);color:#161006}
-@keyframes pop{from{opacity:0;transform:translateY(6px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
 .pin{width:18px;height:18px;border:0;padding:0;background:transparent;cursor:pointer}
 .pin:before{content:"";display:block;width:11px;height:11px;margin:3px;transform:rotate(45deg);background:var(--brass2);border:2px solid #161006;box-shadow:0 0 0 2px rgba(240,200,116,.55)}
 .pin:hover:before{background:#fff}
