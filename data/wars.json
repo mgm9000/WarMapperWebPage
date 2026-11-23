@@ -1027,5 +1027,1253 @@
   "r": 250,
   "src": "https://en.wikipedia.org/wiki/Gaza_war",
   "maps": []
+ },
+ {
+  "stop": -600,
+  "name": "Babylonian conquest of Judah",
+  "when": "597–586 BCE",
+  "at": [
+   35.2,
+   31.8
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+  "maps": []
+ },
+ {
+  "stop": -500,
+  "name": "Warring States wars",
+  "when": "475–221 BCE",
+  "at": [
+   113.0,
+   35.0
+  ],
+  "r": 1200,
+  "src": "https://en.wikipedia.org/wiki/Warring_States_period",
+  "maps": []
+ },
+ {
+  "stop": -400,
+  "name": "Wars of the Diadochi",
+  "when": "322–281 BCE",
+  "at": [
+   33.0,
+   36.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Wars_of_the_Diadochi",
+  "maps": []
+ },
+ {
+  "stop": -400,
+  "name": "Seleucid–Mauryan War",
+  "when": "305–303 BCE",
+  "at": [
+   70.0,
+   32.0
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/Seleucid–Mauryan_war",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Pyrrhic War",
+  "when": "280–275 BCE",
+  "at": [
+   16.5,
+   39.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Pyrrhic_War",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Kalinga War",
+  "when": "c. 261 BCE",
+  "at": [
+   85.8,
+   20.3
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Kalinga_War",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Chu–Han Contention",
+  "when": "206–202 BCE",
+  "at": [
+   114.0,
+   34.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Chu–Han_Contention",
+  "maps": []
+ },
+ {
+  "stop": -300,
+  "name": "Macedonian Wars",
+  "when": "214–148 BCE",
+  "at": [
+   22.0,
+   40.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Macedonian_Wars",
+  "maps": []
+ },
+ {
+  "stop": -200,
+  "name": "Jugurthine War",
+  "when": "112–106 BCE",
+  "at": [
+   8.0,
+   36.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Jugurthine_War",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Mithridatic Wars",
+  "when": "88–63 BCE",
+  "at": [
+   35.0,
+   40.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Mithridatic_Wars",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Roman–Parthian Wars",
+  "when": "54 BCE–217 CE",
+  "at": [
+   41.0,
+   35.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Roman–Parthian_Wars",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Third Servile War (Spartacus)",
+  "when": "73–71 BCE",
+  "at": [
+   15.5,
+   40.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Third_Servile_War",
+  "maps": []
+ },
+ {
+  "stop": -100,
+  "name": "Caesar's Civil War",
+  "when": "49–45 BCE",
+  "at": [
+   20.0,
+   40.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Caesar's_civil_war",
+  "maps": []
+ },
+ {
+  "stop": 1,
+  "name": "Boudican revolt",
+  "when": "60–61 CE",
+  "at": [
+   0.9,
+   51.9
+  ],
+  "r": 250,
+  "src": "https://en.wikipedia.org/wiki/Boudican_revolt",
+  "maps": []
+ },
+ {
+  "stop": 1,
+  "name": "Year of the Four Emperors",
+  "when": "68–69 CE",
+  "at": [
+   10.0,
+   44.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors",
+  "maps": []
+ },
+ {
+  "stop": 100,
+  "name": "Three Kingdoms wars",
+  "when": "184–280 CE",
+  "at": [
+   112.0,
+   31.0
+  ],
+  "r": 1100,
+  "src": "https://en.wikipedia.org/wiki/Three_Kingdoms",
+  "maps": []
+ },
+ {
+  "stop": 200,
+  "name": "Roman–Sasanian wars",
+  "when": "c. 230–628 CE",
+  "at": [
+   40.0,
+   35.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Roman–Persian_Wars",
+  "maps": []
+ },
+ {
+  "stop": 500,
+  "name": "Sui–Goguryeo War",
+  "when": "598–614 CE",
+  "at": [
+   123.0,
+   41.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Goguryeo–Sui_War",
+  "maps": []
+ },
+ {
+  "stop": 600,
+  "name": "Byzantine–Sasanian War",
+  "when": "602–628 CE",
+  "at": [
+   36.0,
+   36.5
+  ],
+  "r": 1100,
+  "src": "https://en.wikipedia.org/wiki/Byzantine–Sasanian_War_of_602–628",
+  "maps": []
+ },
+ {
+  "stop": 600,
+  "name": "First Fitna (First Muslim Civil War)",
+  "when": "656–661 CE",
+  "at": [
+   44.5,
+   31.5
+  ],
+  "r": 1000,
+  "src": "https://en.wikipedia.org/wiki/First_Fitna",
+  "maps": []
+ },
+ {
+  "stop": 600,
+  "name": "Byzantine–Bulgarian Wars",
+  "when": "680–1018 CE",
+  "at": [
+   25.5,
+   42.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Byzantine–Bulgarian_wars",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "Umayyad conquest of Hispania",
+  "when": "711–718 CE",
+  "at": [
+   -5.0,
+   37.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Umayyad_conquest_of_Hispania",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "Reconquista",
+  "when": "718–1492 CE",
+  "at": [
+   -4.0,
+   40.5
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Reconquista",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "Saxon Wars",
+  "when": "772–804 CE",
+  "at": [
+   9.0,
+   52.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Saxon_Wars",
+  "maps": []
+ },
+ {
+  "stop": 700,
+  "name": "An Lushan Rebellion",
+  "when": "755–763 CE",
+  "at": [
+   113.5,
+   34.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/An_Lushan_Rebellion",
+  "maps": []
+ },
+ {
+  "stop": 900,
+  "name": "Liao–Song wars",
+  "when": "979–1005 CE",
+  "at": [
+   116.0,
+   39.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Liao–Song_wars",
+  "maps": []
+ },
+ {
+  "stop": 1000,
+  "name": "First Crusade",
+  "when": "1096–1099 CE",
+  "at": [
+   33.0,
+   36.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/First_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1100,
+  "name": "Second Crusade",
+  "when": "1147–1149 CE",
+  "at": [
+   34.0,
+   37.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Second_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1100,
+  "name": "Genpei War",
+  "when": "1180–1185 CE",
+  "at": [
+   135.5,
+   34.7
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Genpei_War",
+  "maps": []
+ },
+ {
+  "stop": 1100,
+  "name": "Third Crusade",
+  "when": "1189–1192 CE",
+  "at": [
+   35.1,
+   32.9
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Third_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Fourth Crusade",
+  "when": "1202–1204 CE",
+  "at": [
+   28.0,
+   41.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Fourth_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Northern Crusades",
+  "when": "1198–1290 CE",
+  "at": [
+   24.0,
+   57.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Northern_Crusades",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Albigensian Crusade",
+  "when": "1209–1229 CE",
+  "at": [
+   2.0,
+   43.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Albigensian_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "First Barons' War",
+  "when": "1215–1217 CE",
+  "at": [
+   -1.0,
+   52.0
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/First_Barons'_War",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Rise of the Mali Empire (Kirina)",
+  "when": "c. 1235 CE",
+  "at": [
+   -8.0,
+   12.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Kirina",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Seventh and Eighth Crusades",
+  "when": "1248–1270 CE",
+  "at": [
+   31.5,
+   31.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Seventh_Crusade",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Mamluk–Ilkhanid wars",
+  "when": "1260–1323 CE",
+  "at": [
+   38.0,
+   34.5
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Mamluk–Ilkhanid_War",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "Mongol invasions of Japan",
+  "when": "1274 and 1281 CE",
+  "at": [
+   130.3,
+   33.6
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "War of the Sicilian Vespers",
+  "when": "1282–1302 CE",
+  "at": [
+   14.0,
+   37.8
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/War_of_the_Sicilian_Vespers",
+  "maps": []
+ },
+ {
+  "stop": 1200,
+  "name": "First War of Scottish Independence",
+  "when": "1296–1328 CE",
+  "at": [
+   -3.5,
+   56.0
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/First_War_of_Scottish_Independence",
+  "maps": []
+ },
+ {
+  "stop": 1300,
+  "name": "Second War of Scottish Independence",
+  "when": "1332–1357 CE",
+  "at": [
+   -3.0,
+   55.8
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Second_War_of_Scottish_Independence",
+  "maps": []
+ },
+ {
+  "stop": 1300,
+  "name": "Red Turban Rebellion",
+  "when": "1351–1368 CE",
+  "at": [
+   116.0,
+   33.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Red_Turban_Rebellions",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Great Polish–Lithuanian–Teutonic War",
+  "when": "1409–1411 CE",
+  "at": [
+   20.1,
+   53.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Polish–Lithuanian–Teutonic_War",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Hussite Wars",
+  "when": "1419–1434 CE",
+  "at": [
+   14.5,
+   49.8
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Hussite_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Wars of the Roses",
+  "when": "1455–1487 CE",
+  "at": [
+   -1.5,
+   53.0
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Sengoku period wars",
+  "when": "1467–1615 CE",
+  "at": [
+   136.0,
+   35.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Sengoku_period",
+  "maps": []
+ },
+ {
+  "stop": 1400,
+  "name": "Italian Wars",
+  "when": "1494–1559 CE",
+  "at": [
+   10.5,
+   44.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Italian_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Ottoman–Safavid wars",
+  "when": "1514–1639 CE",
+  "at": [
+   44.0,
+   36.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Ottoman–Safavid_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "German Peasants' War",
+  "when": "1524–1525 CE",
+  "at": [
+   10.0,
+   48.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/German_Peasants'_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Ottoman–Habsburg wars",
+  "when": "1526–1791 CE",
+  "at": [
+   19.0,
+   46.5
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/Ottoman–Habsburg_wars",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Mughal conquest of North India (Panipat)",
+  "when": "1526–1556 CE",
+  "at": [
+   77.0,
+   29.4
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/First_Battle_of_Panipat",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Ethiopian–Adal War",
+  "when": "1529–1543 CE",
+  "at": [
+   40.0,
+   10.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Ethiopian–Adal_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Spanish conquest of the Inca Empire",
+  "when": "1532–1572 CE",
+  "at": [
+   -72.0,
+   -13.5
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Inca_Empire",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Schmalkaldic War",
+  "when": "1546–1547 CE",
+  "at": [
+   12.0,
+   51.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Schmalkaldic_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Burmese–Siamese wars",
+  "when": "1547–1855 CE",
+  "at": [
+   100.5,
+   15.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Burmese–Siamese_wars",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Livonian War",
+  "when": "1558–1583 CE",
+  "at": [
+   25.0,
+   57.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Livonian_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "French Wars of Religion",
+  "when": "1562–1598 CE",
+  "at": [
+   2.5,
+   46.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/French_Wars_of_Religion",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Eighty Years' War (Dutch Revolt)",
+  "when": "1568–1648 CE",
+  "at": [
+   5.0,
+   51.8
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Eighty_Years'_War",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Anglo-Spanish War (Armada)",
+  "when": "1585–1604 CE",
+  "at": [
+   -4.0,
+   49.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Anglo–Spanish_War_(1585–1604)",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Moroccan invasion of Songhai (Tondibi)",
+  "when": "1591 CE",
+  "at": [
+   -1.0,
+   16.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Battle_of_Tondibi",
+  "maps": []
+ },
+ {
+  "stop": 1500,
+  "name": "Imjin War (Japanese invasions of Korea)",
+  "when": "1592–1598 CE",
+  "at": [
+   127.5,
+   36.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Japanese_invasions_of_Korea_(1592–1598)",
+  "maps": []
+ },
+ {
+  "stop": 1600,
+  "name": "Anglo-Dutch Wars",
+  "when": "1652–1674 CE",
+  "at": [
+   2.5,
+   52.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Anglo-Dutch_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Great Northern War",
+  "when": "1700–1721 CE",
+  "at": [
+   25.0,
+   58.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Great_Northern_War",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "War of the Austrian Succession",
+  "when": "1740–1748 CE",
+  "at": [
+   15.0,
+   50.5
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Third Battle of Panipat",
+  "when": "1759–1761 CE",
+  "at": [
+   76.9,
+   29.4
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Third_Battle_of_Panipat",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Anglo-Mysore Wars",
+  "when": "1767–1799 CE",
+  "at": [
+   76.7,
+   12.4
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Anglo-Mysore_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Anglo-Maratha Wars",
+  "when": "1775–1818 CE",
+  "at": [
+   74.0,
+   18.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Anglo-Maratha_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "Haitian Revolution",
+  "when": "1791–1804 CE",
+  "at": [
+   -72.5,
+   19.0
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+  "maps": []
+ },
+ {
+  "stop": 1700,
+  "name": "French Revolutionary Wars",
+  "when": "1792–1802 CE",
+  "at": [
+   6.0,
+   48.5
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/French_Revolutionary_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Latin American Wars of Independence",
+  "when": "1808–1833 CE",
+  "at": [
+   -70.0,
+   -10.0
+  ],
+  "r": 2500,
+  "src": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "War of 1812",
+  "when": "1812–1815 CE",
+  "at": [
+   -79.0,
+   43.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/War_of_1812",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Greek War of Independence",
+  "when": "1821–1832 CE",
+  "at": [
+   22.5,
+   38.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Greek_War_of_Independence",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "First Opium War",
+  "when": "1839–1842 CE",
+  "at": [
+   113.5,
+   23.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/First_Opium_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Anglo-Sikh Wars",
+  "when": "1845–1849 CE",
+  "at": [
+   74.5,
+   31.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Anglo-Sikh_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Mexican–American War",
+  "when": "1846–1848 CE",
+  "at": [
+   -100.0,
+   27.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Mexican–American_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Crimean War",
+  "when": "1853–1856 CE",
+  "at": [
+   34.0,
+   45.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Crimean_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Indian Rebellion of 1857",
+  "when": "1857–1858 CE",
+  "at": [
+   79.0,
+   26.5
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Paraguayan War",
+  "when": "1864–1870 CE",
+  "at": [
+   -57.5,
+   -25.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Paraguayan_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Franco-Prussian War",
+  "when": "1870–1871 CE",
+  "at": [
+   6.0,
+   49.0
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Anglo-Zulu War",
+  "when": "1879 CE",
+  "at": [
+   31.0,
+   -28.5
+  ],
+  "r": 350,
+  "src": "https://en.wikipedia.org/wiki/Anglo-Zulu_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "First Sino-Japanese War",
+  "when": "1894–1895 CE",
+  "at": [
+   124.0,
+   38.5
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/First_Sino-Japanese_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "First Italo-Ethiopian War (Adwa)",
+  "when": "1895–1896 CE",
+  "at": [
+   39.0,
+   14.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/First_Italo-Ethiopian_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Spanish–American War",
+  "when": "1898 CE",
+  "at": [
+   -77.0,
+   22.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/Spanish–American_War",
+  "maps": []
+ },
+ {
+  "stop": 1800,
+  "name": "Second Boer War",
+  "when": "1899–1902 CE",
+  "at": [
+   27.0,
+   -27.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Second_Boer_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Russo-Japanese War",
+  "when": "1904–1905 CE",
+  "at": [
+   124.0,
+   40.0
+  ],
+  "r": 700,
+  "src": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Balkan Wars",
+  "when": "1912–1913 CE",
+  "at": [
+   23.0,
+   41.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Balkan_Wars",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Russian Civil War",
+  "when": "1917–1922 CE",
+  "at": [
+   50.0,
+   55.0
+  ],
+  "r": 2000,
+  "src": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Polish–Soviet War",
+  "when": "1919–1921 CE",
+  "at": [
+   24.0,
+   52.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Polish–Soviet_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Chinese Civil War",
+  "when": "1927–1949 CE",
+  "at": [
+   114.0,
+   32.0
+  ],
+  "r": 1200,
+  "src": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Second Italo-Ethiopian War",
+  "when": "1935–1936 CE",
+  "at": [
+   39.5,
+   9.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Spanish Civil War",
+  "when": "1936–1939 CE",
+  "at": [
+   -3.7,
+   40.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Second Sino-Japanese War",
+  "when": "1937–1945 CE",
+  "at": [
+   113.0,
+   33.0
+  ],
+  "r": 1500,
+  "src": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Indo-Pakistani wars",
+  "when": "1947–1971 CE",
+  "at": [
+   74.5,
+   32.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Indo-Pakistani_wars_and_conflicts",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Arab–Israeli wars",
+  "when": "1948–1973 CE",
+  "at": [
+   34.5,
+   31.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Arab–Israeli_conflict",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Algerian War",
+  "when": "1954–1962 CE",
+  "at": [
+   3.0,
+   35.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Algerian_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Suez Crisis",
+  "when": "1956 CE",
+  "at": [
+   32.4,
+   30.5
+  ],
+  "r": 300,
+  "src": "https://en.wikipedia.org/wiki/Suez_Crisis",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Congo Crisis",
+  "when": "1960–1965 CE",
+  "at": [
+   23.5,
+   -3.0
+  ],
+  "r": 800,
+  "src": "https://en.wikipedia.org/wiki/Congo_Crisis",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Soviet–Afghan War",
+  "when": "1979–1989 CE",
+  "at": [
+   67.0,
+   34.0
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Soviet–Afghan_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Iran–Iraq War",
+  "when": "1980–1988 CE",
+  "at": [
+   47.5,
+   31.5
+  ],
+  "r": 600,
+  "src": "https://en.wikipedia.org/wiki/Iran–Iraq_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Falklands War",
+  "when": "1982 CE",
+  "at": [
+   -59.0,
+   -51.7
+  ],
+  "r": 400,
+  "src": "https://en.wikipedia.org/wiki/Falklands_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "Gulf War",
+  "when": "1990–1991 CE",
+  "at": [
+   47.0,
+   29.5
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Gulf_War",
+  "maps": []
+ },
+ {
+  "stop": 1900,
+  "name": "First and Second Congo Wars",
+  "when": "1996–2003 CE",
+  "at": [
+   26.0,
+   -2.0
+  ],
+  "r": 1100,
+  "src": "https://en.wikipedia.org/wiki/Second_Congo_War",
+  "maps": []
+ },
+ {
+  "stop": 2000,
+  "name": "Syrian Civil War",
+  "when": "2011–2024 CE",
+  "at": [
+   38.0,
+   35.0
+  ],
+  "r": 500,
+  "src": "https://en.wikipedia.org/wiki/Syrian_civil_war",
+  "maps": []
+ },
+ {
+  "stop": 2026,
+  "name": "2026 Iran War",
+  "when": "from Feb 2026 CE",
+  "at": [
+   52.0,
+   31.0
+  ],
+  "r": 900,
+  "src": "https://en.wikipedia.org/wiki/2026_Iran_war",
+  "maps": []
  }
 ]

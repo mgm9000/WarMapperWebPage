@@ -16,7 +16,7 @@
 
   let hist = [], wars = [], mapsList = [], land = null;
   const cache = new Map();
-  let map, idx = 0, playing = !REDUCED, timer = null, buf = "A", curSnap = null, panelOpen = false;
+  let map, idx = 0, playing = !REDUCED, buf = "A", curSnap = null, panelOpen = false;
   let warMarkers = [], pinMarkers = [], lastFeatures = [];
 
   function snapFor(stop) {
@@ -112,10 +112,10 @@
     if (next !== prev) { next.classList.add("on"); prev.classList.remove("on"); hudOn = 1 - hudOn; }
   }
   /* go(i, instant): instant = the viewer is dragging or the page is starting, so no fades or slider glide */
-  function go(i, instant) {
+  function go(i, instant, fromTour) {
     idx = i;
     const stop = STOPS[i], h = snapFor(stop);
-    setSlider(i, !instant);
+    if (!fromTour) setSlider(i, !instant);
     setHud(stop, h, !instant);
     if (!playing) $("live").textContent = fmtYear(stop) + ". Borders from the " + snapLabel(h.year) + " snapshot.";
     showWars(stop, instant);
@@ -140,8 +140,23 @@
     setHover(null);
     buf = inc; shown = year;
   }
-  function schedule() { clearTimeout(timer); timer = setTimeout(() => { go((idx + 1) % STOPS.length); schedule(); }, DWELL_MS); }
-  function pause() { playing = false; clearTimeout(timer); syncPlay(); }
+  /* The tour is one continuous glide: pos moves at a steady rate (one century per DWELL_MS) and never pauses.
+     The century shown is the nearest stop; at the end pos wraps to the start, so the ball reappears at the left instead of rewinding. */
+  let pos = 0, lastT = 0, raf = null;
+  function paintSlider(v) { const sl = $("slider"); sl.value = v; sl.style.setProperty("--p", (v / (STOPS.length - 1) * 100) + "%"); }
+  function tick(t) {
+    if (!playing) return;
+    if (!lastT) lastT = t;
+    pos += Math.min(t - lastT, 250) / DWELL_MS; lastT = t;
+    const max = STOPS.length - 1;
+    if (pos >= max) pos -= max;
+    paintSlider(pos);
+    const i = Math.round(pos);
+    if (i !== idx) go(i, false, true);
+    raf = requestAnimationFrame(tick);
+  }
+  function schedule(keep) { cancelAnimationFrame(raf); lastT = 0; if (!keep) pos = idx; raf = requestAnimationFrame(tick); }
+  function pause() { playing = false; cancelAnimationFrame(raf); syncPlay(); }
   function resume() {
     closePanel(); playing = true; syncPlay();
     map.fitBounds(WORLD_BOUNDS, { padding: 10, duration: REDUCED ? 0 : 900 });
@@ -167,16 +182,27 @@
       if (token !== warToken) return;
       map.getSource("wars").setData({ type: "FeatureCollection", features: list.map((w) => ({ type: "Feature", properties: { r0: w.r * 1000 / (156543.03 * Math.cos(w.at[1] * Math.PI / 180)) }, geometry: { type: "Point", coordinates: w.at } })) });
       fade(1, soft ? 600 : 0);
-      const placed = []; /* labels that would overlap at the world view are stacked downwards */
+      const placed = []; /* label rectangles already used, so labels never sit on top of each other */
+      const hit = (r) => placed.some((q) => r.x < q.x + q.w && r.x + r.w > q.x && r.y < q.y + q.h && r.y + r.h > q.y);
       list.forEach((w, k) => {
-        const px = map.project(w.at); let dy = 0;
-        while (placed.some((q) => Math.abs(q.x - px.x) < 170 && Math.abs(q.y - (px.y + dy)) < 26)) dy += 26;
-        placed.push({ x: px.x, y: px.y + dy });
+        const px = map.project(w.at), lw = Math.min(240, 24 + 7 * w.name.length), lh = 26;
+        let spot = null;
+        for (const dy of [0, 28, -28, 56, -56, 84, -84]) {
+          for (const side of [1, -1]) { /* right of the ring first, then left */
+            const r = { x: side === 1 ? px.x + 8 : px.x - 8 - lw, y: px.y + dy - lh / 2, w: lw, h: lh };
+            if (!hit(r)) { spot = { side, dy, r }; break; }
+          }
+          if (spot) break;
+        }
         const wrap = el("div", "warwrap"); /* MapLibre positions the wrapper; the button inside does the animation */
-        const b = el("button", "war", w.name); b.type = "button"; b.style.animationDelay = (k * 160) + "ms"; b.title = w.name + " (" + w.when + ")";
+        let b;
+        if (spot) { placed.push(spot.r); b = el("button", "war", w.name); }
+        else { b = el("button", "war dot"); b.setAttribute("aria-label", w.name); } /* no room for a label: a dot, still clickable */
+        b.type = "button"; b.style.animationDelay = (k * 120) + "ms"; b.title = w.name + " (" + w.when + ")";
         b.addEventListener("click", (e) => { e.stopPropagation(); pause(); openWar(w); });
         wrap.append(b);
-        warMarkers.push(new maplibregl.Marker({ element: wrap, anchor: "left", offset: [8, dy] }).setLngLat(w.at).addTo(map));
+        const mk = spot ? { anchor: spot.side === 1 ? "left" : "right", offset: [spot.side * 8, spot.dy] } : { anchor: "center", offset: [0, 0] };
+        warMarkers.push(new maplibregl.Marker({ element: wrap, ...mk }).setLngLat(w.at).addTo(map));
       });
     };
     if (soft) { fade(0, 300); setTimeout(build, 420); } else { fade(0, 0); build(); }
@@ -292,7 +318,7 @@
     $("home-view").addEventListener("click", () => { closePanel(); toWorld(); });
     $("info").addEventListener("click", () => $("about-data").showModal());
     addEventListener("keydown", (e) => { if (e.key === "Escape" && panelOpen) { closePanel(); toWorld(); } });
-    document.addEventListener("visibilitychange", () => { if (document.hidden) clearTimeout(timer); else if (playing) schedule(); });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) cancelAnimationFrame(raf); else if (playing) schedule(true); });
   }
 
   /* ---------- start ---------- */
