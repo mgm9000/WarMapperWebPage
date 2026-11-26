@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Students · WarMapper</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head><body>
+<div id="shell-header"></div>
+<main class="students">
+  <h1>For Students</h1>
+  <div class="tiles">
+
+    <!-- To link a tile, put the WarMapper battle-map address in data-target. Until then it does nothing when clicked. -->
+    <div class="tile" role="link" tabindex="0" data-target="" aria-label="Revolutionary War in South Carolina">
+      <svg viewBox="0 0 480 300" role="img" aria-label="Illustration: a schematic map of the Carolinas coast with campaign routes and battle markers">
+        <defs>
+          <linearGradient id="sea1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101a2a"/><stop offset="1" stop-color="#0a111b"/></linearGradient>
+          <pattern id="grid1" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#1d2b40" stroke-width="1"/></pattern>
+        </defs>
+        <rect width="480" height="300" fill="url(#sea1)"/><rect width="480" height="300" fill="url(#grid1)" opacity=".6"/>
+        <path d="M0 0H300C292 40 318 70 306 104C296 134 330 150 336 186C340 210 360 222 352 252C346 276 380 290 396 300H0Z" fill="#1f2d40" stroke="#c9d3e0" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M120 40C150 90 140 150 190 190C220 214 250 230 280 262" fill="none" stroke="#2c3e57" stroke-width="3"/>
+        <path d="M60 120C110 140 150 150 190 190" fill="none" stroke="#2c3e57" stroke-width="3"/>
+        <path d="M90 70C140 80 190 110 240 140C270 158 300 170 320 196" fill="none" stroke="#d2a24a" stroke-width="2.4" stroke-dasharray="7 6"/>
+        <path d="M70 188C130 176 190 170 240 140" fill="none" stroke="#7fa6d6" stroke-width="2.4" stroke-dasharray="7 6"/>
+        <g fill="#f0c874" stroke="#161006" stroke-width="2.5">
+          <path d="M320 196l9 9-9 9-9-9z"/><path d="M240 140l8 8-8 8-8-8z"/><path d="M130 100l7 7-7 7-7-7z"/><path d="M92 178l7 7-7 7-7-7z"/>
+        </g>
+        <g fill="none" stroke="#d2a24a" stroke-width="1.5" opacity=".7"><circle cx="320" cy="205" r="22"/><circle cx="240" cy="148" r="18"/></g>
+      </svg>
+      <div class="tcap"><h2>Revolutionary War in South Carolina</h2></div>
+    </div>
+
+    <div class="tile" role="link" tabindex="0" data-target="" aria-label="Sherman's March to Atlanta and the Coast">
+      <svg viewBox="0 0 480 300" role="img" aria-label="Illustration: a schematic map of Georgia with a long marching route from the interior to the coast and railways between towns">
+        <defs>
+          <linearGradient id="sea2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101a2a"/><stop offset="1" stop-color="#0a111b"/></linearGradient>
+          <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#1d2b40" stroke-width="1"/></pattern>
+        </defs>
+        <rect width="480" height="300" fill="url(#sea2)"/><rect width="480" height="300" fill="url(#grid2)" opacity=".6"/>
+        <path d="M30 0H400C410 50 400 80 420 118C440 150 470 170 480 190V300H30Z" fill="#1f2d40" stroke="#c9d3e0" stroke-width="1.6" stroke-linejoin="round"/>
+        <g fill="none" stroke="#3b5272" stroke-width="2.4"><path d="M70 60L150 90L200 140L260 160"/><path d="M150 90L240 60L330 80"/><path d="M200 140L190 210L240 250"/></g>
+        <g stroke="#2f4260" stroke-width="3" stroke-dasharray="2 5" fill="none"><path d="M70 60L150 90L200 140L260 160L330 170L400 190"/></g>
+        <path d="M110 70C170 100 215 130 260 160C310 192 360 190 410 196" fill="none" stroke="#d2a24a" stroke-width="3.2" stroke-dasharray="9 6"/>
+        <path d="M100 100C150 130 200 150 260 190" fill="none" stroke="#d2a24a" stroke-width="3.2" stroke-dasharray="9 6" opacity=".7"/>
+        <path d="M410 196l-12-7v14z" fill="#f0c874"/>
+        <g fill="#f0c874" stroke="#161006" stroke-width="2.5">
+          <path d="M110 70l9 9-9 9-9-9z"/><path d="M260 160l8 8-8 8-8-8z"/><path d="M420 196l9 9-9 9-9-9z" opacity="0"/>
+        </g>
+        <g fill="#0a111b" stroke="#c9d3e0" stroke-width="2"><circle cx="150" cy="90" r="5"/><circle cx="200" cy="140" r="5"/><circle cx="330" cy="170" r="5"/></g>
+        <g fill="none" stroke="#d2a24a" stroke-width="1.5" opacity=".7"><circle cx="110" cy="79" r="22"/></g>
+      </svg>
+      <div class="tcap"><h2>Sherman&rsquo;s March to Atlanta and the Coast</h2></div>
+    </div>
+
+  </div>
+</main>
+<script src="js/auth.js"></script><script src="js/entitlements.js"></script><script src="js/shell.js"></script>
+<script>
+  /* Tiles open the address in data-target. Left empty, a tile does nothing yet. */
+  document.querySelectorAll(".tile").forEach(function (t) {
+    function open() { var u = t.getAttribute("data-target"); if (u) location.href = u; }
+    t.addEventListener("click", open);
+    t.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
+  });
+</script>
+</body></html>

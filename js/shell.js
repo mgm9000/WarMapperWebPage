@@ -3,6 +3,7 @@
   const NAV = [
     ["About WarMapper", "about.html"],
     ["Search a WarMap", "search.html"],
+    ["For Students", "students.html"],
     ["For institutions", "institutions.html"],
     ["For publishers", "publishers.html"],
   ];

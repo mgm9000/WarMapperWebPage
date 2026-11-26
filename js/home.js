@@ -104,11 +104,6 @@
     const layers = document.querySelectorAll("#hud .hudl");
     const next = layers[soft ? 1 - hudOn : hudOn], prev = layers[hudOn];
     next.querySelector(".era").textContent = fmtYear(stop);
-    const meta = next.querySelector(".meta"); meta.textContent = "";
-    const exact = h.year === stop;
-    meta.append("Borders from the ", Object.assign(el("b"), { textContent: snapLabel(h.year) }), " snapshot" + (exact ? "" : " (nearest available)"));
-    if (stop === 2026) meta.append(". Latest data is 2010.");
-    else if (h.year <= 1000) meta.append(". Early borders are approximate.");
     if (next !== prev) { next.classList.add("on"); prev.classList.remove("on"); hudOn = 1 - hudOn; }
   }
   /* go(i, instant): instant = the viewer is dragging or the page is starting, so no fades or slider glide */
