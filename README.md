@@ -47,6 +47,28 @@ The tour has 47 stops (`STOPS` in `js/home.js`). Each stop shows the nearest bor
 
 `tools/build_hist.py` (needs `shapely`) shrinks the snapshots from a clone of https://github.com/aourednik/historical-basemaps . `tools/build_land.py` makes the coastline (see its header). Their output is checked in, so you only need these to change the data.
 
+## Moving hosts (GitHub Pages to Cloudflare)
+
+The site is plain files with no build step, so it can move to another host by connecting this same repo. Written 27 Nov 2026; check each service's current docs before you act.
+
+**Keep it portable while you build**
+- Plain HTML, CSS and JavaScript only. No Jekyll, and no deploy that depends on GitHub Actions.
+- Relative paths for everything (`css/site.css`, not `/css/site.css` or a full address), so it works at a domain root and under `/WarMapperWebPage/`.
+- Keep large files out of the repo (map scans, big images). Plan to put them in file storage (Cloudflare R2) and link to them.
+- Put anything that needs a server (login, subscriptions, pricing) behind its own address, not inside these files.
+
+**The move**
+1. In Cloudflare, create a new project from this repo (branch `main`). Prefer Workers with static assets; Cloudflare now points new projects there, and Pages still works. No build command; publish the repo root.
+2. Open the preview address Cloudflare gives you and click through: home page, the tour, a war, a map card, every menu page.
+3. Point the domain at the project in Cloudflare (a DNS change). Allow a short gap while it takes effect.
+4. After it works, update any links to the old address, and decide whether to turn GitHub Pages off.
+
+**Check before and after**
+- `data/maps.json`: the playback links point at `https://mgm9000.github.io/WarMapper/playbacks/<id>/`. They keep working while that site stays up; change them if the playbacks move.
+- Cloudflare has a per-file size limit (about 25 MiB at last check, unverified). The biggest file here is a border snapshot in `data/hist/`, well under that.
+- `.nojekyll` is only for GitHub Pages and is harmless elsewhere. Redirects and a custom 404 page are set up differently on Cloudflare.
+- Licence: the border data under `data/hist/` comes from a GPL-3.0 project (see `NOTICE.md`). Settle that before the site is public on any host.
+
 ## Not built yet
 
 Accounts, login, subscriptions and pricing; the content of the four menu pages; "Search a WarMap"; making this the public landing page; the domain war-mapper.com.
